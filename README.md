@@ -11,6 +11,10 @@ mock-telco-api-pipeline/
 ├── ingestion/
 │   └── go_api/
 │       ├── main.go               # Go server for mock telco API
+│       ├── handlers.go           # HTTP handlers for each endpoint
+│       ├── models.go             # Data models (User, CallLog, DataUsage)
+│       ├── mockdata.go           # Functions to generate mock data
+│       ├── utils.go              # Helper functions like writeJSON
 │       ├── .air.toml             # Air config (not committed)
 │       ├── data/                 # Static mock response files (JSON, CSV, etc.)
 │       └── tmp/                  # Temp dir used by Air (git-ignored)

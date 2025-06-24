@@ -3,16 +3,14 @@
 *.out
 *.test
 
-# Air temp files and logs
+# Air build artifacts and config
 ingestion/go_api/tmp/
 ingestion/go_api/air.log
+ingestion/go_api/.air.toml
 
 # If Air ever dumps to top-level tmp
 **/tmp/
 **/air.log
-
-# Air config
-ingestion/go_api/.air.toml
 
 # Ngrok config
 ngrok.yml
