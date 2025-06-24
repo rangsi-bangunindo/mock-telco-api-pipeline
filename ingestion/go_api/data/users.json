@@ -1,0 +1,4 @@
+[
+    { "id": 1, "name": "Alice", "phone_number": "081234567890", "region": "Jakarta" },
+    { "id": 2, "name": "Bob", "phone_number": "081298765432", "region": "Bandung" }
+]

@@ -1,0 +1,32 @@
+# Go build artifacts
+*.exe
+*.out
+*.test
+
+# Air temp files and logs
+ingestion/go_api/tmp/
+ingestion/go_api/air.log
+
+# If Air ever dumps to top-level tmp
+**/tmp/
+**/air.log
+
+# Air config
+ingestion/go_api/.air.toml
+
+# Ngrok config
+ngrok.yml
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.env
+*.env
+
+# Editor configs
+.vscode/
+*.code-workspace
+
+# OS junk files
+.DS_Store
+Thumbs.db
