@@ -9,15 +9,13 @@ type User struct {
 	Region      string `json:"region"`
 }
 
-type CallLog struct {
-	CallerID   int       `json:"caller_id"`
-	ReceiverID int       `json:"receiver_id"`
-	Timestamp  time.Time `json:"timestamp"`
-	Duration   int       `json:"duration_sec"`
-}
-
-type DataUsage struct {
-	UserID   int    `json:"user_id"`
-	Date     string `json:"date"`
-	DataUsed int    `json:"data_used_mb"`
+type CDR struct {
+	ID          string    `json:"id"`
+	Timestamp   time.Time `json:"timestamp"`
+	Caller      string    `json:"caller"`
+	Receiver    string    `json:"receiver"`
+	Duration    int       `json:"duration_seconds"`
+	CallType    string    `json:"call_type"`
+	CellTowerID string    `json:"cell_tower_id"`
+	Status      string    `json:"status"`
 }
